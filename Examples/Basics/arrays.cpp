@@ -127,6 +127,7 @@ int main() {
     for(size_t r = 0; r < 3; r++) {
         delete[] darr2[r];
     }
+    delete[] darr2;
     darr2 = nullptr;
 
     return 0;
