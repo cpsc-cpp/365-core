@@ -89,7 +89,7 @@ void sort(List& list) {
 
 
 void clear( List& list ) {
-    for(size_t i = 0; i < list.size; i++ ) {
+    while( list.size > 0) {
         deleteFromHead( list );
     }
 }
@@ -122,12 +122,12 @@ int main() {
     cout << endl << "Sorting: " << endl;
     // Test sorting
     for(size_t i = 0; i < 10; i++ ) {
-        addToHead( list, i%5);
+        addToHead( list, i);
         sort(list);
         print( list ); 
     }
 
     // clear list for cleanup
     clear(list);
-
+    list.head = nullptr;
 }
