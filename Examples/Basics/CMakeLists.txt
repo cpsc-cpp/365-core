@@ -17,3 +17,4 @@ target_compile_options(overload PRIVATE -Wfloat-conversion)
 add_executable(functions functions.cpp)
 
 add_subdirectory(LinkedList)
+add_subdirectory(Timing)
