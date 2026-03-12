@@ -6,3 +6,4 @@ add_executable(virtual virtual.cpp)
 
 add_subdirectory(DataProcessing)
 add_subdirectory(ColRow)
+add_subdirectory(Polynomial)
